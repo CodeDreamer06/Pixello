@@ -1,0 +1,73 @@
+@import 'shake'
+
+@font-face
+    font-family: Inter
+    src: url('./assets/fonts/Inter.ttf')
+
+body
+    font-family: Inter
+    margin: 0
+    color: white
+
+.cursor-highlight
+    border: 1px solid white
+    margin-left: 1.5rem
+    padding: 0.3rem 0.75rem
+
+.rplace-cursor
+    position: absolute
+    bottom: -4.5rem
+    right: -6.8rem
+
+.btn
+    background: white
+    padding: 0.5rem 1.5rem
+    margin-right: 1rem
+    border-radius: 25px
+    font-family: Inter
+    font-size: 1.2rem
+    outline: none
+    font-weight: 700
+
+    &--outline
+        background: transparent
+        border: 1px solid white
+        color: white
+
+.badge
+    background: transparent
+    border: 3px solid white
+    box-shadow: -15px 5px 51px 3px rgba(white, 0.5)
+    transition: all 50ms ease-in
+    color: white
+    padding: 0.6rem 1.8rem
+    border-radius: 25px
+    position: absolute
+    font-size: 1.2rem
+    font-weight: 500
+    cursor: pointer
+
+    &:hover
+        @include do-shake('shake-slow', 10, 10, 1, 10s)
+        box-shadow: -15px 5px 51px 3px rgba(white, 0.7)
+
+.hero
+    background-color: black
+    padding: 3rem
+    background-image: url('./assets/images/rplace_bg.png')
+
+    h1
+        font-size: 4rem
+        max-width: 20ch
+        margin: 2rem 0
+
+    &__content
+        padding: 8rem 0
+        display: flex
+        justify-content: space-evenly
+
+    &__rplace-logo-container
+        position: relative
+
+    &__rplace
+        position: relative
