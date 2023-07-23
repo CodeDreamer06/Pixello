@@ -9,15 +9,31 @@ body
     margin: 0
     color: white
 
+@keyframes dragCursorSelectedBox
+    from
+        width: 0
+
+    to
+        width: 13.7rem
+
 .cursor-highlight
     border: 1px solid white
+    display: inline-block
     margin-left: 1.5rem
     padding: 0.3rem 0.75rem
+    animation: dragCursorSelectedBox 1.5s ease-out 1
 
 .rplace-cursor
     position: absolute
     bottom: -4.5rem
     right: -6.8rem
+
+.cursor-selected-box
+    position: absolute
+    background: white
+    border: 3px solid black
+    height: 5px
+    width: 5px
 
 .btn
     background: white
@@ -51,6 +67,10 @@ body
         @include do-shake('shake-slow', 10, 10, 1, 10s)
         box-shadow: -15px 5px 51px 3px rgba(white, 0.7)
 
+@media only screen and (max-width: 800px)
+    .hero__content
+        flex-direction: column-reverse
+
 .hero
     background-color: black
     padding: 3rem
@@ -71,3 +91,14 @@ body
 
     &__rplace
         position: relative
+
+.color-picker
+    margin-bottom: 20px
+
+.row
+    display: flex
+
+.square
+    width: 30px
+    height: 30px
+    cursor: pointer

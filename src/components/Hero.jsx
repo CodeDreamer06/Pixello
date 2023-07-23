@@ -13,6 +13,10 @@ const Hero = props => {
 					<span className="hero__rplace">
 						<span className="cursor-highlight">r/place</span>
 						<img src={CommentCursor} alt="comment cursor" className="rplace-cursor"/>
+						<span style={{top: -10, left: 20}} className="cursor-selected-box"></span>
+						<span style={{top: -10, right: -5}} className="cursor-selected-box cursor-selected-box--r1"></span>
+						<span style={{bottom: -10, left: 20}} className="cursor-selected-box"></span>
+						<span style={{bottom: -10, right: -5}} className="cursor-selected-box cursor-selected-box--r2"></span>
 					</span>
 				</h1>
 				<div>
