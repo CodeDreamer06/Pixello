@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Pixello/static/css/main.15db001f.css",
+    "main.js": "/Pixello/static/js/main.1160142a.js",
+    "static/media/Inter.ttf": "/Pixello/static/media/Inter.aadb65ac45347ff46699.ttf",
+    "static/media/rplace_bg.png": "/Pixello/static/media/rplace_bg.f4e180ad03e6dd78c186.png",
+    "static/media/rplace_logo.png": "/Pixello/static/media/rplace_logo.97a56506d7202d7adf02.png",
+    "index.html": "/Pixello/index.html",
+    "main.15db001f.css.map": "/Pixello/static/css/main.15db001f.css.map",
+    "main.1160142a.js.map": "/Pixello/static/js/main.1160142a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15db001f.css",
+    "static/js/main.1160142a.js"
+  ]
+}
